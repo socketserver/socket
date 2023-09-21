@@ -28,7 +28,7 @@ const io = new Server(server, {
 const texts = [...strings];
 let currentIndex = 0;
 // note that time is set using milliseconds so 6 is represent the hours and 60 the minutes and 60 seconds and 1000 is milliseconds
-const time = 3 * 1000;
+const time = 180 * 1000;
 let shuffledTexts = shuffleArray([...texts]); // Make a shuffled copy of the texts
 
 function shuffleArray(array) {
