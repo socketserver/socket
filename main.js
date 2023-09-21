@@ -45,10 +45,10 @@ function changeText() {
     currentIndex = 0;
     shuffledTexts = shuffleArray([...texts]); // Reshuffle the texts
   }
-  console.log(shuffledTexts[currentIndex], "pre");
   currentIndex++;
+  console.log(shuffledTexts[currentIndex], ">", currentIndex);
   io.emit("textUpdate", shuffledTexts[currentIndex]);
-  console.log(shuffledTexts[currentIndex], "current");
+
 }
 
 // Change text every 6 hours
